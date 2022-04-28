@@ -1,0 +1,62 @@
+.express-header-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  :global {
+    .express-header {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+
+      .express-header-left {
+        display: flex;
+        align-items: center;
+
+        .express-logo {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 82px;
+          height: 82px;
+          margin-left: -10px;
+          overflow: hidden;
+        }
+        .express-logo-text {
+          &.white {
+            color: rgb(15, 50, 170);
+          }
+
+          color: white;
+          margin-left: 16px;
+          font-weight: bold;
+          font-size: 21px;
+        }
+      }
+      .express-header-right {
+        .express-navigation {
+          list-style: none;
+          display: flex;
+          &.white {
+            .express-navi-item {
+              .express-navi-item-link {
+                color: black;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .express-navi-item {
+            .express-navi-item-link {
+              text-decoration: none;
+              color: white;
+              font-size: 15px;
+              line-height: 82px;
+              font-weight: lighter;
+              margin-left: 36px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

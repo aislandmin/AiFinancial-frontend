@@ -1,0 +1,417 @@
+.express-header-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 900px;
+  z-index: -1;
+}
+
+.express-advertise-container {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  .express-advertise {
+    display: flex;
+    justify-content: space-between;
+    margin: 88px auto 0 auto;
+
+    .express-advertise-left {
+      flex: 1;
+      width: 50%;
+
+      h2.express-adv-title {
+        font-size: 58px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+      }
+      h4.express-adv-text {
+        font-size: 24px;
+        font-weight: lighter;
+        margin-top: 40px;
+        margin-bottom: 0;
+        color: white;
+      }
+      .express-adv-button-link {
+        button.express-adv-button {
+          font-size: 21px;
+          font-weight: bold;
+          color: rgb(15, 50, 170);
+          margin-top: 56px;
+          padding: 13px 40px;
+          background-color: white;
+          border-radius: 30px;
+          border-width: 0;
+          outline: 0;
+          cursor: pointer;
+        }
+      }
+    }
+    .express-advertise-right {
+      flex: 1;
+      width: 50%;
+      position: relative;
+      .express-adv-img {
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        right: -30px;
+      }
+    }
+  }
+}
+
+.express-aboutus {
+  max-width: 1000px;
+  margin: 435px auto 0 auto;
+  h3 {
+    font-size: 48px;
+    margin: 0px;
+    color: rgb(15, 50, 170);
+    text-align: center;
+  }
+  p {
+    font-size: 17px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 26px;
+    color: rgb(125, 125, 125);
+  }
+  ul {
+    list-style: none;
+    margin: 78px auto 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 948px;
+    text-align: center;
+    img {
+      width: 106px;
+    }
+    h5 {
+      font-size: 20px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      margin-bottom: 0;
+      margin-top: 28px;
+      color: rgb(15, 50, 170);
+    }
+  }
+}
+
+.express-services {
+  position: relative;
+  margin-top: 150px;
+  max-width: 100%;
+  overflow: hidden;
+
+  .express-services-img {
+    position: absolute;
+    height: 656px;
+    width: 100%;
+    top: 0;
+  }
+  .express-services-header {
+    position: relative;
+    margin-top: 150px;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+      font-size: 48px;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: lighter;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      max-width: 540px;
+      color: white;
+    }
+    button {
+      margin-top: 56px;
+      font-size: 21px;
+      color: rgb(15, 50, 170);
+      background: white;
+      padding: 13px 40px;
+      border-radius: 30px;
+      border-width: 0px;
+      outline: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .express-services-list {
+    position: relative;
+    max-width: 1120px;
+    margin: 50px auto 0px;
+    .express-services-list-carousel {
+      .express-services-slider-control {
+        position: absolute;
+        right: 25px;
+        top: -100px;
+        button {
+          width: 52px;
+          height: 52px;
+          border: 0px;
+          outline: 0px;
+          border-radius: 26px;
+          background: white;
+          cursor: pointer;
+          text-align: center;
+          img {
+            width: 30px;
+          }
+        }
+        button:nth-of-type(2) {
+          margin-left: 48px;
+        }
+      }
+      ul.express-services-slider-ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+
+        li.express-services-slider-li {
+          margin-bottom: 100px;
+          .express-services-slider-inner {
+            margin: 15px;
+            padding: 25px 30px;
+            width: 480px;
+            height: 368px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+            .express-services-slider-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              h3 {
+                font-size: 24px;
+                color: rgb(56, 81, 208);
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+                margin-top: 0px;
+              }
+            }
+            h4 {
+              font-size: 16px;
+              line-height: 24px;
+              color: rgb(56, 81, 208);
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin card-template($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+
+  padding: 38px 43px;
+  text-align: center;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  height: 338px;
+  box-sizing: border-box;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  img {
+    width: 50px;
+  }
+  h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+  }
+  p {
+    font-size: 13px;
+    margin-top: 26px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
+}
+
+.express-drive {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .column-blue-card {
+    @include card-template(rgb(24, 67, 214), white);
+  }
+
+  .column-feature-card {
+    @include card-template(white, rgb(102, 102, 102));
+    p {
+      color: rgb(153, 153, 153);
+    }
+  }
+
+  .express-drive-left {
+    width: 576px;
+
+    .express-drive-left-first-column {
+      display: inline-block;
+      width: 272px;
+      margin-top: 260px;
+      margin-right: 20px;
+      vertical-align: top;
+    }
+    .express-drive-left-second-column {
+      display: inline-block;
+      width: 272px;
+      margin-top: 148px;
+      vertical-align: top;
+    }
+  }
+
+  .express-drive-right {
+    width: 420px;
+    padding-top: 290px;
+    position: relative;
+    img {
+      width: 470px;
+      position: absolute;
+      left: -60px;
+      top: 0px;
+    }
+    h2 {
+      margin-top: 88px;
+      margin-bottom: 0px;
+      color: rgb(15, 50, 170);
+      font-size: 48px;
+    }
+    h4 {
+      margin-top: 18px;
+      margin-bottom: 0px;
+      color: rgb(56, 81, 208);
+      font-size: 23px;
+    }
+    p {
+      margin-top: 40px;
+      color: rgb(102, 102, 102);
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@mixin download-btn-style($display) {
+  display: $display;
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.express-user-download-container {
+  margin-top: -400px;
+  height: 1300px;
+  position: relative;
+  overflow: hidden;
+
+  img.express-user-download-background {
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-15%);
+    margin-top: -50px;
+    z-index: -1;
+  }
+  .express-user-download {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .express-user-download-left {
+      margin-top: 480px;
+      width: 300px;
+      h2 {
+        font-size: 48px;
+        line-height: 54px;
+        color: rgb(15, 50, 170);
+      }
+      a.download-btn {
+        display: block;
+        border: 1px solid rgb(15, 50, 170);
+        border-radius: 30px;
+        color: rgb(15, 50, 170);
+        font-size: 21px;
+        text-align: center;
+        height: 98px;
+        line-height: 100px;
+        font-weight: normal;
+        margin-top: 44px;
+        text-decoration: none;
+        box-shadow: 0px 0px 10px rgba(40, 130, 248, 40%);
+        &:hover {
+          background-color: rgb(15, 50, 170);
+          color: white;
+          img.download-btn-normal {
+            @include download-btn-style(none);
+          }
+          img.download-btn-hover {
+            @include download-btn-style(inline);
+          }
+        }
+        img.download-btn-normal {
+          @include download-btn-style(inline);
+        }
+        img.download-btn-hover {
+          @include download-btn-style(none);
+        }
+      }
+    }
+
+    .express-user-download-right {
+      width: 496px;
+      margin-top: 435px;
+      h2 {
+        text-align: right;
+        margin: 0;
+        font-size: 48px;
+        color: white;
+      }
+      p {
+        color: white;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: bold;
+        margin: 36px 0px;
+        text-align: right;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+          width: 115px;
+          margin-top: 45px;
+          img {
+            width: 115px;
+            height: 115px;
+          }
+        }
+      }
+    }
+  }
+}

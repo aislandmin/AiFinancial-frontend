@@ -1,0 +1,57 @@
+$theme-blue: rgb(39, 39, 138);
+
+.products-list-div {
+  margin: 50px auto;
+
+  :global {
+    .products-list {
+      list-style-type: none;
+      display: flex;
+      border-bottom: 1px solid $theme-blue;
+      border-left: 1px solid $theme-blue;
+      border-right: 1px solid $theme-blue;
+      margin: 0 auto;
+      max-width: 95%;
+      padding: 0;
+      line-height: 35px;
+      height: 40px;
+
+      &.header {
+        background-color: $theme-blue;
+        color: white;
+        font-size: 20px;
+        line-height: 45px;
+        height: 45px;
+      }
+      .products-list-item {
+        width: 12.5%;
+        text-align: center;
+        button {
+          display: inline-flex;
+          align-items: center;
+          height: 30px;
+        }
+        input {
+          width: 100%;
+          text-align: center;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+
+    .products-list-row-text {
+        margin: 0 auto;
+        max-width: 95%;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .products-list-new-button{
+          margin:0 auto;
+          max-width: 95%;
+          text-align: center;
+          padding: 10px;
+      }
+  }
+}

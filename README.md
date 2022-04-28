@@ -1,5 +1,5 @@
 # Test Account:
-username: John
+username: John\
 password: 123456
 
 # Getting Started with Create React App

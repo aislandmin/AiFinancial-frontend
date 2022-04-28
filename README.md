@@ -1,4 +1,4 @@
-# Test acount:
+# Test Account:
 username: John
 password: 123456
 
